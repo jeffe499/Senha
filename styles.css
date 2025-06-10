@@ -1,260 +1,213 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap');
+/* style.css */
 
-:root {
-  --color-bg: #121924;
-  --color-bg-senha: #1E2A47;
-  --color-bg-param: #2A3A66;
-  --color-white: #F5F7FA;
-  --color-accent: #4AC9FF;
-  --color-accent-dark: #2383B6;
-  --color-weak: #FF6B6B;
-  --color-medium: #FFD93D;
-  --color-strong: #4ADE80;
-  --font-primary: 'Roboto', sans-serif;
-  --font-mono: 'Roboto Mono', monospace;
-}
-
+/* Reset básico */
 * {
-  box-sizing: border-box;
-  font-weight: 400;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-white);
-  font-family: var(--font-primary);
-  min-height: 100vh;
-  line-height: 1.5;
-  padding: 24px 16px;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .conteudo {
-  max-width: 1000px;
-  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  width: 380px;
 }
 
 .conteudo-titulo {
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
 }
 
 .conteudo-titulo img {
-  width: 72px;
-  margin-bottom: 20px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 .titulo-principal {
-  font-family: var(--font-mono);
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 8px;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 6px;
 }
 
 .titulo-secundario {
-  font-size: 20px;
   font-weight: 400;
-  color: var(--color-accent);
+  font-size: 1rem;
+  color: #666;
 }
 
 .conteudo-senha {
-  background-color: var(--color-bg-senha);
-  padding: 28px 32px;
-  border-bottom: 6px solid var(--color-accent);
-  border-radius: 12px 12px 0 0;
-  margin-bottom: 48px;
+  margin-bottom: 25px;
 }
 
 .conteudo-senha label {
   display: block;
-  font-size: 18px;
-  margin-bottom: 12px;
-  cursor: default;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  font-size: 1rem;
 }
 
 #campo-senha {
   width: 100%;
-  padding: 14px 18px;
-  background-color: var(--color-bg-senha);
-  border: none;
-  border-radius: 10px;
-  font-family: var(--font-mono);
-  font-size: 42px;
-  letter-spacing: 6px;
-  color: var(--color-white);
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  background: #fafafa;
   cursor: default;
   user-select: all;
-  transition: box-shadow 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 #campo-senha:focus {
+  border-color: #4a90e2;
   outline: none;
-  box-shadow: 0 0 12px var(--color-accent);
+  background: #fff;
 }
 
 .parametro {
-  background-color: var(--color-bg-param);
-  padding: 32px 36px;
-  border-radius: 0 0 12px 12px;
-  border: 2px solid var(--color-accent);
-  box-shadow: 0 2px 10px rgba(74, 201, 255, 0.2);
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
 }
 
 .parametro-titulo {
-  font-family: var(--font-mono);
-  font-size: 28px;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: var(--color-accent);
-  margin-bottom: 24px;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .parametro-coluna__senha {
   display: flex;
   flex-direction: column;
-  gap: 36px;
-}
-
-.parametro-senha {
-  width: 100%;
-}
-
-.parametro-senha__titulo {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.parametro-senha-botoes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 
-.parametro-senha__botao {
-  background-color: transparent;
-  border: 2px solid var(--color-accent);
-  color: var(--color-white);
-  padding: 14px 28px;
-  font-size: 28px;
-  cursor: pointer;
+.parametro-senha {
+  background: #f9f9f9;
+  padding: 15px 20px;
   border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.parametro-senha__titulo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Botões para tamanho da senha */
+.parametro-senha-botoes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.parametro-senha__botao {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   user-select: none;
 }
 
 .parametro-senha__botao:hover {
-  background-color: var(--color-accent);
-  color: var(--color-bg);
+  background-color: #357ABD;
 }
 
 .parametro-senha__texto {
-  font-size: 26px;
-  font-weight: 600;
-  color: var(--color-accent);
-  min-width: 48px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  min-width: 25px;
   text-align: center;
 }
 
+/* Checkbox */
 .parametro-senha-checkbox {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 14px;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
-.checkbox {
-  width: 22px;
-  height: 22px;
+.parametro-senha-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
   cursor: pointer;
-  accent-color: var(--color-accent);
-  border-radius: 5px;
-  border: 2px solid var(--color-accent-dark);
-  background-color: var(--color-bg-param);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.checkbox:hover {
-  border-color: var(--color-accent);
+.parametro-senha-checkbox label {
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
 }
 
-.checkbox:checked {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
-}
-
-.parametro-senha-textos {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 600;
-  color: #AFCBFF;
-  margin-top: 14px;
-  user-select: none;
-  font-size: 16px;
-}
-
+/* Barra de força */
 .barra {
-  background-color: var(--color-bg-senha);
-  height: 36px;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.4);
-  margin-top: 16px;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-bottom: 8px;
   overflow: hidden;
-  position: relative;
 }
 
 .forca {
-  height: 36px;
-  border-radius: 8px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  transition: width 0.4s ease, background-color 0.4s ease;
-}
-
-.forca.fraca {
-  background-color: var(--color-weak);
-  width: 25%;
-}
-
-.forca.media {
-  background-color: var(--color-medium);
-  width: 50%;
-}
-
-.forca.forte {
-  background-color: var(--color-strong);
+  height: 8px;
   width: 100%;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.entropia {
-  margin-top: 16px;
-  font-size: 18px;
+/* Estados da força */
+.fraca {
+  background-color: #e74c3c; /* vermelho */
+}
+
+.media {
+  background-color: #f1c40f; /* amarelo */
+}
+
+.forte {
+  background-color: #2ecc71; /* verde */
+}
+
+/* Textos da força da senha */
+.parametro-senha-textos {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
   font-weight: 600;
-  color: #B0D0FF;
-  text-align: center;
-  user-select: none;
+  color: #555;
+  margin-bottom: 8px;
 }
 
-/* Responsivo */
-
-@media screen and (min-width: 768px) {
-  .parametro-coluna__senha {
-    flex-direction: row;
-    gap: 48px;
-  }
-
-  .parametro-senha {
-    width: 33%;
-  }
-
-  .conteudo-senha {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* Texto de entropia */
+.entropia {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+  margin-top: 6px;
+  min-height: 22px; /* Para evitar salto visual */
 }
