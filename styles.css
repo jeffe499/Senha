@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Mono&display=swap');
+
+:root {
+    --branco: #F5F7FA;
+    --cor-de-fundo: #121924;
+    --fundo-senha: #1E2A47;
+    --fundo-texto: #2A3A66;
+    --borda: #4AC9FF;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto Mono', monospace;
+}
+
+* {
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--roboto);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.titulo-principal {
+    font-family: var(--roboto-mono);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 12px;
+}
+
+.titulo-secundario {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--borda);
+    margin-bottom: 24px;
+}
+
+.conteudo-titulo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.conteudo-senha {
+    margin-top: 80px;
+    background: var(--fundo-senha);
+    padding: 32px 36px;
+    border-radius: 12px;
+    border-bottom: 6px solid var(--borda);
+    box-shadow: 0 4px 12px rgba(74, 201, 255, 0.3);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#campo-senha {
+    background-color: var(--fundo-senha);
+    border: none;
+    color: var(--branco);
+    font-family: var(--roboto-mono);
+    font-size: 48px;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    transition: box-shadow 0.3s ease;
+}
+
+#campo-senha:focus {
+    outline: none;
+    box-shadow: 0 0 10px var(--borda);
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.parametro {
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    margin-top: 40px;
+    padding: 28px 36px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(74, 201, 255, 0.15);
+}
+
+.parametro-titulo {
+    font-family: var(--roboto-mono);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: var(--borda);
+}
+
+.parametro-senha__titulo {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.parametro-coluna__senha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.parametro-senha {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.parametro-senha-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.parametro-senha__botao {
+    background-color: transparent;
+    color: var(--borda);
+    border: 2px solid var(--borda);
+    padding: 20px 36px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.parametro-senha__botao:hover {
+    background-color: var(--borda);
+    color: var(--cor-de-fundo);
+}
+
+.parametro-senha__texto {
+    padding: 20px 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+    color: #C1DFF8;
+}
+
+label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: var(--borda);
+    border-radius: 4px;
+}
+
+.barra {
+    background-color: var(--fundo-senha);
+    height: 36px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 16px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.forca {
+    height: 36px;
+    position: relative;
+    bottom: 36px;
+    border-radius: 6px;
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+.fraca {
+    width: 25%;
+    background-color: #FF6B6B;
+}
+
+.media {
+    width: 50%;
+    background-color: #FFD93D;
+}
+
+.forte {
+    width: 100%;
+    background-color: #4ADE80;
+}
+
+.parametro-senha-textos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #AFCBFF;
+}
+
+@media screen and (min-width: 768px) {
+    .parametro-coluna__senha {
+        flex-direction: row;
+        gap: 32px;
+    }
+    .parametro-senha {
+        width: 50%;
+        margin: 0;
+    }
+}
