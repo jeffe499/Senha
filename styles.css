@@ -1,4 +1,4 @@
-/* style.css */
+/* style.css - versão compacta */
 
 /* Reset básico */
 * {
@@ -18,53 +18,53 @@ body {
 
 .conteudo {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  padding: 30px 40px;
-  width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 20px 25px;
+  width: 350px;
 }
 
 .conteudo-titulo {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .conteudo-titulo img {
-  width: 50px;
-  margin-bottom: 10px;
+  width: 40px;
+  margin-bottom: 6px;
 }
 
 .titulo-principal {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .titulo-secundario {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666;
 }
 
 .conteudo-senha {
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .conteudo-senha label {
   display: block;
   font-weight: 600;
   color: #444;
-  margin-bottom: 6px;
-  font-size: 1rem;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
 }
 
 #campo-senha {
   width: 100%;
-  padding: 12px 15px;
+  padding: 8px 12px;
   border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
   background: #fafafa;
   cursor: default;
   user-select: all;
@@ -79,34 +79,34 @@ body {
 
 .parametro {
   border-top: 1px solid #ddd;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .parametro-titulo {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #222;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
 .parametro-coluna__senha {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 
 .parametro-senha {
   background: #f9f9f9;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.04);
 }
 
 .parametro-senha__titulo {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #333;
 }
 
@@ -114,7 +114,7 @@ body {
 .parametro-senha-botoes {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   justify-content: center;
 }
 
@@ -122,13 +122,14 @@ body {
   background-color: #4a90e2;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  width: 36px;
-  height: 36px;
-  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.3rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   user-select: none;
+  line-height: 1;
 }
 
 .parametro-senha__botao:hover {
@@ -136,10 +137,10 @@ body {
 }
 
 .parametro-senha__texto {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: #222;
-  min-width: 25px;
+  min-width: 20px;
   text-align: center;
 }
 
@@ -147,35 +148,35 @@ body {
 .parametro-senha-checkbox {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
 .parametro-senha-checkbox input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
 }
 
 .parametro-senha-checkbox label {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #444;
   cursor: pointer;
 }
 
 /* Barra de força */
 .barra {
-  height: 8px;
+  height: 6px;
   background-color: #ddd;
-  border-radius: 5px;
-  margin-bottom: 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
   overflow: hidden;
 }
 
 .forca {
-  height: 8px;
+  height: 6px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
@@ -196,18 +197,18 @@ body {
 .parametro-senha-textos {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #555;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 /* Texto de entropia */
 .entropia {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   color: #666;
   text-align: center;
-  margin-top: 6px;
-  min-height: 22px; /* Para evitar salto visual */
+  margin-top: 4px;
+  min-height: 20px;
 }
