@@ -1,214 +1,210 @@
-/* style.css - versão compacta */
-
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .conteudo {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  padding: 20px 25px;
-  width: 350px;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
 }
 
 .conteudo-titulo {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .conteudo-titulo img {
-  width: 40px;
-  margin-bottom: 6px;
+    width: 60px;
+    margin-bottom: 15px;
 }
 
 .titulo-principal {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 4px;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 6px;
 }
 
 .titulo-secundario {
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #666;
+    font-size: 1rem;
+    color: #666;
 }
 
 .conteudo-senha {
-  margin-bottom: 18px;
+    margin-bottom: 30px;
 }
 
 .conteudo-senha label {
-  display: block;
-  font-weight: 600;
-  color: #444;
-  margin-bottom: 4px;
-  font-size: 0.95rem;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
 }
 
 #campo-senha {
-  width: 100%;
-  padding: 8px 12px;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  letter-spacing: 1.5px;
-  background: #fafafa;
-  cursor: default;
-  user-select: all;
-  transition: border-color 0.3s ease;
-}
-
-#campo-senha:focus {
-  border-color: #4a90e2;
-  outline: none;
-  background: #fff;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #fafafa;
+    color: #222;
+    letter-spacing: 2px;
+    user-select: all;
 }
 
 .parametro {
-  border-top: 1px solid #ddd;
-  padding-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
 }
 
 .parametro-titulo {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #222;
-  margin-bottom: 15px;
-  text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
 }
 
 .parametro-coluna__senha {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .parametro-senha {
-  background: #f9f9f9;
-  padding: 12px 15px;
-  border-radius: 8px;
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
 }
 
 .parametro-senha__titulo {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #333;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #333;
 }
 
-/* Botões para tamanho da senha */
+/* Botões de quantidade */
 .parametro-senha-botoes {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
 }
 
 .parametro-senha__botao {
-  background-color: #4a90e2;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-  font-size: 1.3rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  user-select: none;
-  line-height: 1;
+    background-color: #2f80ed;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    user-select: none;
 }
 
 .parametro-senha__botao:hover {
-  background-color: #357ABD;
+    background-color: #1366d6;
 }
 
 .parametro-senha__texto {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #222;
-  min-width: 20px;
-  text-align: center;
+    font-size: 1.2rem;
+    min-width: 30px;
+    text-align: center;
+    color: #222;
 }
 
 /* Checkbox */
 .parametro-senha-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
 }
 
-.parametro-senha-checkbox input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
+.checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
 }
 
-.parametro-senha-checkbox label {
-  font-size: 0.95rem;
-  color: #444;
-  cursor: pointer;
-}
-
-/* Barra de força */
+/* Força da senha */
 .barra {
-  height: 6px;
-  background-color: #ddd;
-  border-radius: 4px;
-  margin-bottom: 6px;
-  overflow: hidden;
+    height: 6px;
+    background: #ddd;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: hidden;
 }
 
 .forca {
-  height: 6px;
-  width: 100%;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+    height: 6px;
+    width: 33.33%;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
 }
 
-/* Estados da força */
+/* Classes para força */
 .fraca {
-  background-color: #e74c3c; /* vermelho */
+    background-color: #eb5757; /* vermelho */
 }
 
 .media {
-  background-color: #f1c40f; /* amarelo */
+    background-color: #f2c94c; /* amarelo */
 }
 
 .forte {
-  background-color: #2ecc71; /* verde */
+    background-color: #27ae60; /* verde */
 }
 
-/* Textos da força da senha */
 .parametro-senha-textos {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #555;
-  margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-/* Texto de entropia */
 .entropia {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: #666;
-  text-align: center;
-  margin-top: 4px;
-  min-height: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/* Responsividade simples */
+@media (max-width: 480px) {
+    .conteudo {
+        padding: 20px;
+        max-width: 90vw;
+    }
+
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+
+    #campo-senha {
+        font-size: 1rem;
+    }
 }
